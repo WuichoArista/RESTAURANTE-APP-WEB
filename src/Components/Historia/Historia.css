@@ -1,0 +1,38 @@
+.historia{
+    background-color: white;
+}
+
+.historia-container{
+    max-width: 96rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.historia-info{
+    width: 45%;
+}
+
+.historia-info p{
+     text-align: center;
+     margin: 0;
+     font-size: 20px;
+     line-height: 35px;
+}
+
+.historia-info h2{
+     text-align: center;
+     margin: 25px 0;
+     font-size: 30px;
+}
+
+.historia-imagen {
+    width: 45%;
+}
+
+.historia-imagen img{
+    width: 90%;
+    border-radius: 5px;
+}

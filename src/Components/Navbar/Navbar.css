@@ -1,0 +1,36 @@
+header{
+    background-color: rgb(29, 28, 28);
+}
+
+nav{
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo {
+   padding: 0 15px;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.activo{
+    color: white;
+    padding: 15px 20px ;
+    background-color: rgb(41, 40, 40);
+}
+
+.inactivo{
+    color: white;
+    padding: 15px 20px ;
+    text-decoration: none;
+}
+

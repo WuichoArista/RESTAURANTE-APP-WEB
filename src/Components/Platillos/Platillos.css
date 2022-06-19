@@ -1,0 +1,24 @@
+.seccion-platillos{
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+.platillos-titulo{
+    text-align: center;
+    margin: 25px 0;
+    font-size: 30px;
+}
+
+.platillos-menu{
+    padding: 15px;
+}
+
+.platillos-menu-titulo{
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.platillos-platillo{
+    margin: 50px 0;
+}
