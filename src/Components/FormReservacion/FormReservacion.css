@@ -1,0 +1,42 @@
+.formulario-reservacion-container{
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+.formulario-reservacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.formulario-reservacion-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.formulario-reservacion-input input{
+    padding: 6px;
+}
+
+.formulario-reservacion-input select{
+    padding: 6px;
+}
+
+.formulario-reservacion-input select option {
+    font-size: 15px;
+ }
+
+.formulario-reservacion-input button{
+    padding: 6px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+.formulario-reservacion-input svg{
+    margin: 3px;
+    height: 25px;
+}
