@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom'
 const Menu = () => {
   return (
     <main>
-      <Banner logo={LogoMenu} />
+      <Banner logo={LogoMenu} mensaje={'Menu'} />
       <MenuInfo />
       <Outlet />
     </main>

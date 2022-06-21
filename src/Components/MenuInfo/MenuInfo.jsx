@@ -4,7 +4,8 @@ import './MenuInfo.css'
 
 const MenuInfo = () => {
   return (
-    <div className='menu-info-container'>
+    <section>
+      <div className='menu-info-container'>
         <div className="Menu-info-titulo">
            <h2>Revisa nuestro menu</h2>
         </div>
@@ -12,7 +13,8 @@ const MenuInfo = () => {
             <Link className='boton-menu' to={'Platillos'}>Platillos</Link>
             <Link className='boton-menu' to={'Bebidas'}>Bebidas</Link>
         </div>
-    </div>
+      </div>
+    </section>
   )
 }
 

@@ -1,0 +1,8 @@
+.reservaciones-container{
+    max-width: 96rem;
+    margin:  0 auto;
+}
+
+.reservaciones-titulo{
+    text-align: center;
+}

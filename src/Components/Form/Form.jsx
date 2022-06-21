@@ -17,7 +17,8 @@ const Form = () => {
     }
 
   return (
-    <div className='formulario-container'>
+    <section>
+      <div className='formulario-container'>
         <div className='formulario'>
             <input onBlur={ ( e ) => manejarCambio( e.target ) } type="text" name='nombre' placeholder='Nombre' />
             <input onBlur={ ( e ) => manejarCambio( e.target ) } type="text" name='telefono' placeholder='Telefono' />
@@ -25,7 +26,8 @@ const Form = () => {
             <textarea onBlur={ ( e ) => manejarCambio( e.target ) } name="mensaje" cols="10" rows="10" placeholder='Cuentanos sobre tu evento'></textarea>
             <button onClick={ () => manejarClick() } type='submit'>Enviar</button>
         </div>
-    </div>
+      </div>
+    </section>
   )
 }
 

@@ -39,6 +39,7 @@ footer{
     border: 1px solid  #F4A020;
     color: #F4A020;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .enlaces{

@@ -6,7 +6,7 @@ import LogoInicio from '../../assets/img/banner.jpeg'
 const Home = () => {
   return (
     <main>
-       <Banner logo={LogoInicio} pagina={'home'}/>
+       <Banner logo={LogoInicio} pagina={'home'} mensaje={'Bienvenido'}/>
        <Historia />
     </main>
   )
