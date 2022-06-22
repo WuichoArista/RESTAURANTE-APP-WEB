@@ -1,5 +1,8 @@
 import React , {useState} from 'react'
 import './Form.css'
+import { db } from '../../firebase.js'
+import {   collection , addDoc   } from 'firebase/firestore'
+
 
 const Form = () => {
 
@@ -12,8 +15,10 @@ const Form = () => {
          })
     }
 
-    const manejarClick = () => {
-        console.log(form);
+    const manejarClick = async () => {
+      await addDoc(collection( db, 'evento'), form);
+      setForm()
+      console.log('se envio');
     }
 
   return (
