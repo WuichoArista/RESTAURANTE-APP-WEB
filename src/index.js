@@ -13,6 +13,7 @@ import Eventos from './Pages/Eventos/Eventos';
 import Platillos from './Components/Platillos/Platillos';
 import Bebidas from './Components/Bebidas/Bebidas';
 import Error404 from './Pages/Error404/Error404';
+import Gerencia from './Pages/Gerencia/Gerencia';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,6 +28,7 @@ root.render(
         </Route>
         <Route path='/Reservaciones' element = { <Reservaciones />} />
         <Route path='/Eventos' element = { <Eventos />} />
+        <Route path='/Gerencia' element = { <Gerencia />} />
         <Route path='*' element = { <Error404 />} />
     </Routes>
     <Footer />

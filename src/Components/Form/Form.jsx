@@ -7,6 +7,7 @@ import {   collection , addDoc   } from 'firebase/firestore'
 const Form = () => {
 
     const [ form , setForm ]=useState({})
+    const [ flag , setFlag ] =useState(true)
 
     const manejarCambio = ( evento ) => {
          setForm({
@@ -18,22 +19,32 @@ const Form = () => {
     const manejarClick = async () => {
       await addDoc(collection( db, 'evento'), form);
       setForm()
-      console.log('se envio');
-    }
+      setFlag(false)
+     }
 
-  return (
-    <section>
-      <div className='formulario-container'>
-        <div className='formulario'>
-            <input onBlur={ ( e ) => manejarCambio( e.target ) } type="text" name='nombre' placeholder='Nombre' />
-            <input onBlur={ ( e ) => manejarCambio( e.target ) } type="text" name='telefono' placeholder='Telefono' />
-            <input onBlur={ ( e ) => manejarCambio( e.target ) } type="email" name='correo' placeholder='E-mail'/>
-            <textarea onBlur={ ( e ) => manejarCambio( e.target ) } name="mensaje" cols="10" rows="10" placeholder='Cuentanos sobre tu evento'></textarea>
-            <button onClick={ () => manejarClick() } type='submit'>Enviar</button>
+  if( flag ) {
+    return (
+      <section>
+        <div className='formulario-container'>
+          <div className='formulario'>
+              <input onBlur={ ( e ) => manejarCambio( e.target ) } type="text" name='nombre' placeholder='Nombre' />
+              <input onBlur={ ( e ) => manejarCambio( e.target ) } type="text" name='telefono' placeholder='Telefono' />
+              <input onBlur={ ( e ) => manejarCambio( e.target ) } type="email" name='correo' placeholder='E-mail'/>
+              <textarea onBlur={ ( e ) => manejarCambio( e.target ) } name="mensaje" cols="10" rows="10" placeholder='Cuentanos sobre tu evento'></textarea>
+              <button onClick={ () => manejarClick() } type='submit'>Enviar</button>
+          </div>
         </div>
-      </div>
-    </section>
-  )
+      </section>
+    )
+  }else{
+    return (
+      <section>
+          <div className="mensaje-formulario-eventos">
+            <h2>Tu mensaje fue enviado, en un momento te contactaremos, gracias</h2>
+          </div>
+      </section>
+    )
+  }
 }
 
 export default Form

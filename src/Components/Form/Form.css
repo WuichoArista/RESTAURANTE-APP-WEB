@@ -1,6 +1,7 @@
  
  .formulario-container{
     max-width: 96rem;
+    height: 350px;
     margin: 0 auto;
     padding: 15px;
     display: flex;
@@ -41,4 +42,11 @@
    color: white;
    font-weight: bolder;
    cursor: pointer;
+}
+
+.mensaje-formulario-eventos{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

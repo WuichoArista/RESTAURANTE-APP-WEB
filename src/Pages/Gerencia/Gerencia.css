@@ -1,0 +1,12 @@
+.gerencia_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gerencia_tarjeta{
+    background-color: gray;
+    margin: 20px;
+    padding: 20px;
+}

@@ -1,6 +1,10 @@
 .formulario-reservacion-container{
     max-width: 96rem;
     margin: 0 auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .formulario-reservacion{
@@ -40,4 +44,12 @@
 .formulario-reservacion-input svg{
     margin: 3px;
     height: 25px;
+}
+
+
+.mensaje-form-reservaciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
 }
