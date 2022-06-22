@@ -1,0 +1,54 @@
+.horarios_container{
+    max-width: 96rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 630px;
+    overflow: hidden;
+
+}
+
+
+
+.horarios_info{
+    width: 50%;
+    text-align: center;
+}
+
+.horarios_titulo h2{
+    text-align: center;
+    margin: 25px 0;
+    font-size: 30px;
+}
+
+.horarios_horarios p{
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    line-height: 35px;
+    padding: 15px;
+}
+
+
+
+.horarios_imagen{
+    width: 50%;
+}
+    
+.horarios_imagen img{
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 45px;
+
+}
+
+.horarios_boton button{
+    background-color: black;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+}
