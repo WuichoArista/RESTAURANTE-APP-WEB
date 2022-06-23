@@ -34,3 +34,57 @@ nav{
     text-decoration: none;
 }
 
+.menu_boton{
+    display: none;
+}
+
+
+
+@media ( max-width: 758px ){
+    .menu{
+        display: none;
+    }
+
+    .menu_boton{
+        padding: 0 15px;
+        display: block;
+    }
+
+    .menu_boton_boton{
+        background-color: rgb(29, 28, 28);
+        color: white;
+        border: none;
+    }
+
+    .menu_boton_boton svg{
+         width: 40px;
+         height: auto;
+    }
+
+    .menu_responsive{
+        position: absolute;
+        z-index: 2;
+        background-color: rgb(29, 28, 28);
+        width: 100%;
+    }
+
+    .menu_responsive_option{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .activo_responsive{
+        color: white;
+        padding: 15px 20px ;
+        background-color: rgb(41, 40, 40);
+        width: 80%;
+    }
+    .inactivo_responsive{
+        color: white;
+        padding: 15px 20px ;
+        text-decoration: none;
+        width: 80%;
+    }
+}

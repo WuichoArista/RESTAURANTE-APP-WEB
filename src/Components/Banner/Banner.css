@@ -46,3 +46,18 @@
     font-weight: bolder;
     cursor: pointer;
 }
+
+@media (max-width: 758px){
+    .texto-inicio h3{
+         
+        font-size: 30px;
+         
+         
+    }
+
+    .texto-inicio button{
+         
+        padding: 10px 15px;
+         
+    }
+}

@@ -26,7 +26,6 @@
     text-align: center;
     margin: 0;
     font-size: 20px;
-    line-height: 35px;
     padding: 15px;
 }
 
@@ -51,4 +50,82 @@
     font-weight: bolder;
     font-size: 15px;
     cursor: pointer;
+    border: 1px solid black;
+}
+
+
+@media (max-width: 1480px) {
+
+    .horarios_container{
+        height: 430px;
+    
+    }
+
+    .horarios_horarios p{
+        font-size: 15px;
+        padding: 15px;
+   }
+}
+
+@media (max-width: 1100px) {
+
+    .horarios_container{
+        height: 300px;    
+    
+    }
+
+    .horarios_horarios p{
+        font-size: 15px;
+        padding: 15px;
+    }
+
+   .horarios_titulo h2{
+        font-size: 25px;
+    }
+
+    .horarios_boton button{
+        padding: 10px 15px;
+         
+    }
+
+}
+
+@media (max-width: 758px) {
+    .horarios_container{
+        flex-direction: column;
+        height: auto;
+     
+    }
+    
+    
+    
+    .horarios_info{
+        width: 90%;
+     }
+    
+     
+    
+    .horarios_horarios p{
+         
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+    
+    
+    .horarios_imagen{
+        width: 100%;
+    }
+        
+    .horarios_imagen img{
+            width: 100%;
+            height: auto;
+            position: relative;
+            top: 5px;
+    
+    }
+    
+    .horarios_boton {
+       padding: 20px;
+    }
 }

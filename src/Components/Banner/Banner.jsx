@@ -17,7 +17,7 @@ const Banner = ( { logo , pagina , mensaje}) => {
  
   return (
     <section>
-      <div style={{height: `${window.innerHeight - 53}px`  }} className='banner-container'>
+      <div style={ window.innerWidth < 758 ? { height: '200px' } : window.innerWidth < '913' ? { height: '450px' } : { height: `${window.innerHeight - 53}px`  } } className='banner-container'>
          <img style={ {  transform: `translateY( ${ scrollArriba * 0.20 }px )` } }  src={logo} alt="" />
          <div className="texto-inicio" style={{ transform: `translateY(${ scrollArriba * -0.30 }px )` }}>
           <h3>{mensaje}</h3>

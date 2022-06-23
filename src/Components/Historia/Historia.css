@@ -37,3 +37,72 @@
 .historia-imagen img{
     width: 100%;
 }
+
+@media (max-width: 1480px) {
+
+    .historia-container{
+        height: 390px;
+    
+    }
+
+    .historia-info p{
+        font-size: 15px;
+        line-height: 25px;
+        padding: 15px;
+   }
+}
+
+@media (max-width: 1100px) {
+
+    .historia-info h2{
+        font-size: 25px;
+   }
+
+    .historia-container{
+        height: 290px;
+    
+    }
+
+    .historia-info p{
+        font-size: 15px;
+        line-height: 20px;
+        padding: 15px;
+   }
+}
+
+@media (max-width: 819px) {
+
+     
+
+    .historia-container{
+        height: 270px;
+    
+    }
+
+    
+}
+
+@media (max-width: 758px) {
+
+    .historia-container{
+        flex-direction: column;
+        height: auto;
+     }
+
+     .historia-info{
+        width: 90%;
+     }
+    
+    .historia-info p{
+         font-size: 15px;
+         line-height: auto;
+         padding: 10px;
+    }
+        
+    .historia-imagen {
+        width: 100%;
+    }
+    
+     
+    
+}
