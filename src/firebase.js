@@ -1,6 +1,5 @@
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
-import env from 'react-dotenv';
 
 const firebaseConfig = {
     apiKey: "AIzaSyBugBkKkPB7WshD86KXWF0QncmUFJg2BMI",
