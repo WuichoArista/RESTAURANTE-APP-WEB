@@ -1,8 +1,15 @@
 import React from 'react'
+import logo from '../../assets/img/logoAgave.png'
+import './Error404.css'
 
 const Error404 = () => {
   return (
-    <div>Error404</div>
+    <section>
+      <div className="eror404_container">
+        <h1 className='titulo_error404' >Error 404</h1>
+        <img className='logo_error404' src={logo} alt="" />
+      </div>
+    </section>
   )
 }
 

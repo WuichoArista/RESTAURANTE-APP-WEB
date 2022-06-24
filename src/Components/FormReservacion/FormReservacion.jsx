@@ -5,15 +5,19 @@ import {   collection , addDoc   } from 'firebase/firestore'
 
 const FormReservacion = () => {
 
-    const [ form , setForm ] = useState({});
-    const [ flag , setFlag ] = useState(true)
-
     const [ fecha  ] = useState( new Date() );
     let año = fecha.getFullYear();
     let mes = fecha.getMonth() + 1;
     let dia = fecha.getDate();
     let hora = fecha.getHours();
     let minutos = fecha.getMinutes();
+
+    const [ form , setForm ] = useState({
+        diaReserva: `${ año }-${ ( mes < 10 ? '0' : '' ) + mes }-${ ( dia < 10 ? '0' : '' ) + dia }`
+    });
+    const [ flag , setFlag ] = useState(true)
+
+   
 
     const manejarCambio = ( e ) => {
         setForm( {
@@ -27,10 +31,18 @@ const FormReservacion = () => {
     };
 
     const manejarClick = async () => {
-        await addDoc(collection( db , 'reserva' ),form)
-        setForm()
-        console.log('ya debe de estar');
-        setFlag(false)
+        if( form.nombreReserva === undefined || form.nombreReserva === '' ){
+            alert('por favor dijite un nombre')
+        } else if( form.horaReserva === undefined || form.horaReserva === '' ){
+            alert('por favor indique una hora de reserva')
+        } else if( form.personas === undefined || form.personas === ''){
+            alert('por favor indique cuantas personas')
+        } else{
+            await addDoc(collection( db , 'reserva' ),form)
+            setForm()
+            console.log('ya debe de estar');
+            setFlag(false)
+        }
     };
 
     
@@ -60,6 +72,7 @@ const FormReservacion = () => {
                             <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
                        </svg>
                        <select onBlur={ ( e ) => manejarCambio( e.target ) } name="horaReserva" >
+                            <option value=''> -Selecciona un horario- </option>
                             <option value='10:00 a.m.'> 10:00 a.m.</option>
                             <option value='10:30 a.m.'> 10:30 a.m.</option>
                             <option value='11:00 a.m.'> 11:00 a.m.</option>
@@ -86,6 +99,7 @@ const FormReservacion = () => {
                             <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
                         </svg>
                         <select onBlur={ ( e ) => manejarCambio( e.target ) }  name="personas">
+                            <option value="">-¿Cuantas personas?-</option>
                             <option value="1 persona">1 persona</option>
                             <option value="2 persona">2 persona</option>
                             <option value="3 persona">3 persona</option>

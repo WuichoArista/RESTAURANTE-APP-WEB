@@ -10,8 +10,8 @@ const MenuInfo = () => {
            <h2>Revisa nuestro menu</h2>
         </div>
         <div className="Menu-info-botones">
-            <Link className='boton-menu' to={'Platillos'}>Platillos</Link>
-            <Link className='boton-menu' to={'Bebidas'}>Bebidas</Link>
+            <Link className='boton-menu' to={'platillos'}>Platillos</Link>
+            <Link className='boton-menu' to={'bebidas'}>Bebidas</Link>
         </div>
       </div>
     </section>

@@ -11,6 +11,10 @@
 .Menu-info-botones{
     text-align: center;
     padding: 20px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .boton-menu{

@@ -1,6 +1,6 @@
 window.env = {
   "ALLUSERSPROFILE": "C:\\ProgramData",
-  "API_KEY": "AIzaSyBugBkKkPB7WshD86KXWF0QncmUFJg2BMI",
+  "API_KEY_FIREBASE": "AIzaSyBugBkKkPB7WshD86KXWF0QncmUFJg2BMI",
   "APPDATA": "C:\\Users\\Luis\\AppData\\Roaming",
   "APP_ID": "1:1046938296867:web:86c5cde31716a0c3634796",
   "asl.log": "Destination=file",
