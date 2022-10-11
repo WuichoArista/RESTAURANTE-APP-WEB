@@ -3,10 +3,25 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    min-height: 650px;
+}
+
+.Gerencia_titulo{
+    padding: 0 15px;
 }
 
 .gerencia_tarjeta{
-    background-color: gray;
+    background-color: rgb(237, 237, 237);
     margin: 20px;
     padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.gerencia_tarjeta button{
+    background-color: black;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bolder;
+    border: 1px solid black;
 }

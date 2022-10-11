@@ -1,0 +1,31 @@
+
+.eror404_container{
+    min-height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_error404{
+    font-size: 35px;
+}
+
+.logo_error404{
+    
+    width: 350px;
+}
+
+@media ( max-width: 1100px ){
+    .eror404_container{
+        min-height: 710px;
+        
+    }
+}
+
+@media ( max-width: 758px ){
+    .eror404_container{
+        min-height: 410px;
+        
+    }
+}

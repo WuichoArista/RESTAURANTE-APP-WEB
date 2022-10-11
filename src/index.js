@@ -23,8 +23,8 @@ root.render(
     <Routes>
         <Route path='/' element = { <Home />} />
         <Route path='/Menu/*' element = { <Menu />} >
-          <Route path='Platillos' element = { <Platillos /> } />
-          <Route path='Bebidas' element = { <Bebidas /> } />
+          <Route path='platillos' element = { <Platillos /> } />
+          <Route path='bebidas' element = { <Bebidas /> } />
         </Route>
         <Route path='/Reservaciones' element = { <Reservaciones />} />
         <Route path='/Eventos' element = { <Eventos />} />

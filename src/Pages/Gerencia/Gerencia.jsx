@@ -32,18 +32,23 @@ const Gerencia = () => {
     getData()
   }
 
+
   return (
     <main>
-        <h2>Reservas</h2>
+        <h2 className='Gerencia_titulo'>Reservas</h2>
         <div className="gerencia_container">
           {
             reservas.map( ( reserva , i) => {
               return(
                 <div className='gerencia_tarjeta' key={i}>
-                    <p>Reserva a nombre de: {reserva.nombreReserva}</p>
-                    <p>para: {reserva.personas}</p>
-                    <p>Fecha de reserva: {reserva.diaReserva}</p>
-                    <p>Hora de reserva: {reserva.horaReserva}</p>
+                    <h4>Reserva a nombre de:</h4>
+                    <p>{reserva.nombreReserva}</p>
+                    <h4>Personas:</h4>
+                    <p>{reserva.personas}</p>
+                    <h4>Fecha de reserva:</h4>
+                    <p>{reserva.diaReserva}</p>
+                    <h4>Hora de reserva:</h4>
+                    <p>{reserva.horaReserva}</p>
                     <button onClick={ () => borrar( reserva.id ) } >borrar</button>
                 </div>
               )
